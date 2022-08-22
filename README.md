@@ -2,19 +2,19 @@
 
 ## ELKÉPZELÉS
 
-#### [1. Bemeneti eszköz használata](#i.-bemeneti-eszköz-használata)
+#### [1. Bemeneti eszköz használata](#i)
 
-#### [2. Képjavítás](#ii.-képjavitás)
+#### [2. Képjavítás](#ii)
 
-#### [3. Szabályos körök keresése](#iii.-szabályos-körök-keresése)
+#### [3. Szabályos körök keresése](#iii)
 
-#### [4. Vizsgálat (érme-e, amit körként detektáltunk?)](#iv.-vizsgálat)
+#### [4. Vizsgálat (érme-e, amit körként detektáltunk?)](#iv)
 
-#### [5. Értékfelismerés (hány forintos érme?)](#v.-értékfelismerés)
+#### [5. Értékfelismerés (hány forintos érme?)](#v)
 
 
 
-## I. BEMENETI ESZKÖZ HASZNÁLATA
+## <a name="i">I. BEMENETI ESZKÖZ HASZNÁLATA</a>
 
 - Mintha egy képet olvasnánk be
     - Csak most éppen 30 darabot másodpercenként
@@ -46,7 +46,7 @@ while (true)
 }
 ```
 
-## II. KÉPJAVÍTÁS
+## <a name="ii">II. KÉPJAVÍTÁS</a>
 
 - Szürkeárnyalattá alakítjuk át
 - Egyszerű Median Blur
@@ -60,7 +60,7 @@ medianBlur(gray, gray, 5);
 return gray;
 ```
 
-## III./I. SZABÁLYOS KÖRÖK KERESÉSE
+## <a name="iii">III./I. SZABÁLYOS KÖRÖK KERESÉSE</a>
 
 Hough transzformáció egyik speciális esetét használjuk
 
@@ -117,7 +117,7 @@ int radius = c[2];
 circle(src, center, radius, Scalar(255, 0, 255), 3, LINE_AA);
 ```
 
-## VIZSGÁLAT
+## <a name="iv">IV. VIZSGÁLAT</a>
 
 - Mintakeresési algoritmus
 - Pixelenkénti összehasonlítás
@@ -132,7 +132,7 @@ minMaxLoc(scoreImg, 0, &maxScore);
 return 1 - maxScore;
 ```
 
-## ÉRTÉKFELISMERÉS
+## <a name="v">V. ÉRTÉKFELISMERÉS</a>
 
 - Százalékalapú
     - (50% alatt nem fogadjuk el)
