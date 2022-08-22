@@ -17,12 +17,12 @@ VideoCapture cap(0);
 
 bool start = true;
 
-const Mat _5 = imread("5.jpg", 1);
-const Mat _10 = imread("10.jpg", 1);
-const Mat _20 = imread("20.jpg", 1);
-const Mat _50 = imread("50.jpg", 1);
-const Mat _100 = imread("100.jpg", 1);
-const Mat _200 = imread("200.jpg", 1);
+const Mat _5 = imread("resources/5.jpg", 1);
+const Mat _10 = imread("resources/10.jpg", 1);
+const Mat _20 = imread("resources/20.jpg", 1);
+const Mat _50 = imread("resources/50.jpg", 1);
+const Mat _100 = imread("resources/100.jpg", 1);
+const Mat _200 = imread("resources/200.jpg", 1);
 
 void frameToWindow()
 {
